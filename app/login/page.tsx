@@ -51,7 +51,7 @@ export default function LoginPage() {
       <main className="flex-1 flex items-center justify-center py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md mx-auto space-y-8">
           {/* Card Container */}
-          <div className="bg-white rounded-3xl border border-hairline p-8 sm:p-10 shadow-sm transition-all duration-300">
+          <div className="bg-white rounded-3xl border border-hairline p-5 sm:p-10 shadow-sm transition-all duration-300">
             {/* Header Telemetry */}
             <div className="space-y-2.5 text-center mb-8">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-100 text-stone-600 text-[10px] font-mono-spec tracking-wider uppercase border border-hairline">

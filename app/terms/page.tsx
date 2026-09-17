@@ -33,7 +33,7 @@ export default function TermsPage() {
               </span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-basalt uppercase font-sans">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-basalt uppercase font-sans leading-tight">
               Terms & Conditions
             </h1>
 

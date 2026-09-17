@@ -36,16 +36,16 @@ export default function FitDiagnosticModal() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-basalt/60 backdrop-blur-sm animate-in fade-in duration-150">
-      <div className="relative w-full max-w-2xl bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-hairline overflow-hidden">
+      <div className="relative w-full max-w-2xl bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-hairline overflow-hidden max-h-[92vh] flex flex-col">
         {/* Header */}
-        <div className="p-6 border-b border-hairline bg-[#FAF9F8] flex items-center justify-between">
+        <div className="p-5 sm:p-6 border-b border-hairline bg-[#FAF9F8] flex items-center justify-between shrink-0">
           <div className="flex items-center gap-2">
-            <Footprints className="w-5 h-5 text-safety-orange" />
+            <Footprints className="w-5 h-5 text-safety-orange shrink-0" />
             <div>
-              <h3 className="font-bold text-base text-basalt tracking-tight">
+              <h3 className="font-bold text-sm sm:text-base text-basalt tracking-tight">
                 BIOMECHANICAL FIT DIAGNOSTIC
               </h3>
-              <p className="text-xs text-graphite font-mono-spec">
+              <p className="text-[11px] sm:text-xs text-graphite font-mono-spec">
                 PRECISION FIT PROTOCOL · KYOTO & ZURICH
               </p>
             </div>
@@ -60,7 +60,7 @@ export default function FitDiagnosticModal() {
 
         {/* Diagnostic Steps */}
         {!recommendedProduct ? (
-          <div className="p-6 sm:p-8 space-y-6">
+          <div className="p-5 sm:p-8 space-y-6 overflow-y-auto flex-1">
             {/* Step Progress Bar */}
             <div className="flex items-center justify-between text-xs font-mono-spec text-stone-500 mb-4">
               <span>STEP 0{step} OF 03</span>
@@ -210,7 +210,7 @@ export default function FitDiagnosticModal() {
           </div>
         ) : (
           /* Recommendation Result View */
-          <div className="p-6 sm:p-8 space-y-6">
+          <div className="p-5 sm:p-8 space-y-6 overflow-y-auto flex-1">
             <div className="bg-[#FAF9F8] p-6 rounded-2xl border border-hairline flex flex-col sm:flex-row items-center gap-6">
               <div className="relative w-36 h-36 bg-white rounded-xl overflow-hidden border border-hairline shrink-0">
                 <Image

@@ -41,7 +41,7 @@ export default function BentoGrid() {
                 ENGINEERED ARCHITECTURE · EDITION 04
               </span>
             </div>
-            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
+            <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-basalt uppercase font-sans leading-tight">
               Sustainable Precision In Motion.
             </h2>
           </div>
@@ -58,36 +58,36 @@ export default function BentoGrid() {
           <div className="lg:col-span-7 bg-white rounded-2xl sm:rounded-3xl border border-hairline p-5 sm:p-8 flex flex-col justify-between shadow-xs hover:border-stone-400 transition-colors">
             <div>
               {/* Card Meta Bar */}
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-2">
-                  <span className="font-mono-spec text-xs font-bold text-basalt uppercase">
+              <div className="flex flex-col xs:flex-row xs:items-center justify-between gap-2.5 mb-4 pb-3 border-b border-hairline/60">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="font-mono-spec text-[11px] sm:text-xs font-bold text-basalt uppercase tracking-wider">
                     THE SIGNATURE RUNNER · EDITION 01
                   </span>
-                  <span className="font-mono-spec text-[10px] bg-stone-100 text-stone-700 px-2 py-0.5 rounded border border-hairline">
+                  <span className="font-mono-spec text-[10px] bg-stone-100 text-stone-700 px-2 py-0.5 rounded border border-hairline whitespace-nowrap">
                     SKU: {product.specs.sku}
                   </span>
                 </div>
-                <span className="font-mono-spec text-xs font-bold text-safety-orange">
+                <span className="font-mono-spec text-xs font-bold text-safety-orange whitespace-nowrap self-start xs:self-auto">
                   SUSTAINABLE RESTOCK
                 </span>
               </div>
 
               {/* Product Headline & Price */}
-              <div className="flex items-start justify-between mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 mb-6">
                 <div>
-                  <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-basalt">
+                  <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-basalt leading-tight">
                     {product.name}
                   </h3>
-                  <p className="text-xs text-graphite font-mono-spec mt-0.5">
+                  <p className="text-xs text-graphite font-mono-spec mt-1">
                     {product.subname} — {selectedColorway.name}
                   </p>
                 </div>
-                <div className="text-right">
+                <div className="sm:text-right flex sm:flex-col items-baseline sm:items-end justify-between sm:justify-start gap-1">
                   <span className="text-2xl font-bold font-mono-spec text-basalt">
                     {formatPrice(product.price)}
                   </span>
-                  <span className="block text-[11px] font-mono-spec text-stone-400">
-                    TAX INCLUDED · COMPLIMENTARY DISPATCH
+                  <span className="text-[10px] sm:text-[11px] font-mono-spec text-stone-400 uppercase tracking-wide whitespace-nowrap">
+                    TAX INCLUDED · FREE DISPATCH
                   </span>
                 </div>
               </div>
@@ -194,12 +194,12 @@ export default function BentoGrid() {
             {/* CARD B: Midsole Stack Exploded View & Macro Detail                       */}
             {/* ========================================================================= */}
             <div className="bg-white rounded-2xl sm:rounded-3xl border border-hairline p-6 shadow-xs hover:border-stone-400 transition-colors">
-              <div className="flex items-center justify-between mb-3">
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                 <span className="font-mono-spec text-xs font-bold text-basalt uppercase flex items-center gap-1.5">
-                  <Layers className="w-3.5 h-3.5 text-safety-orange" />
-                  ANATOMY OF ALL-DAY COMFORT
+                  <Layers className="w-3.5 h-3.5 text-safety-orange shrink-0" />
+                  <span>ANATOMY OF ALL-DAY COMFORT</span>
                 </span>
-                <span className="font-mono-spec text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                <span className="font-mono-spec text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 whitespace-nowrap">
                   SUSTAINABLE BUILD
                 </span>
               </div>
@@ -270,12 +270,12 @@ export default function BentoGrid() {
             {/* CARD C: Colorway Selector & Angle Swapper                                */}
             {/* ========================================================================= */}
             <div className="bg-white rounded-2xl sm:rounded-3xl border border-hairline p-6 shadow-xs hover:border-stone-400 transition-colors">
-              <div className="flex items-center justify-between mb-3">
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                 <span className="font-mono-spec text-xs font-bold text-basalt uppercase flex items-center gap-1.5">
-                  <Sliders className="w-3.5 h-3.5 text-racing-blue" />
-                  COLORWAYS & ON-FOOT STYLING
+                  <Sliders className="w-3.5 h-3.5 text-racing-blue shrink-0" />
+                  <span>COLORWAYS & ON-FOOT STYLING</span>
                 </span>
-                <span className="font-mono-spec text-[10px] text-stone-400">
+                <span className="font-mono-spec text-[10px] text-stone-400 font-medium whitespace-nowrap">
                   {selectedColorway.code}
                 </span>
               </div>
@@ -349,11 +349,11 @@ export default function BentoGrid() {
               <div className="absolute inset-0 bg-gradient-to-t from-basalt via-basalt/60 to-basalt/30 pointer-events-none" />
 
               {/* Top Tag */}
-              <div className="relative z-10 flex items-center justify-between">
-                <span className="font-mono-spec text-[10px] uppercase font-bold text-white bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/30">
+              <div className="relative z-10 flex flex-wrap items-center justify-between gap-2.5 mb-2">
+                <span className="font-mono-spec text-[10px] uppercase font-bold text-white bg-white/20 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 whitespace-nowrap shadow-xs">
                   IN MOTION · 15,000-STEP DAILY WEAR
                 </span>
-                <span className="font-mono-spec text-xs text-emerald-400 font-bold">
+                <span className="font-mono-spec text-[11px] sm:text-xs text-emerald-300 font-bold tracking-wider uppercase whitespace-nowrap bg-black/40 backdrop-blur-md px-2.5 py-0.5 rounded-full border border-emerald-400/30">
                   VERIFIED WEAR
                 </span>
               </div>
@@ -375,11 +375,11 @@ export default function BentoGrid() {
               </div>
 
               {/* Bottom Retail Action Ribbon */}
-              <div className="relative z-10 pt-3 border-t border-white/20 flex items-center justify-between text-xs font-mono-spec text-stone-300">
-                <span>30-DAY AT-HOME TRIAL</span>
+              <div className="relative z-10 pt-3 border-t border-white/20 flex flex-wrap items-center justify-between gap-2 text-xs font-mono-spec text-stone-300">
+                <span className="whitespace-nowrap">30-DAY AT-HOME TRIAL</span>
                 <button
                   onClick={() => setQuickViewProduct(product)}
-                  className="text-white font-semibold flex items-center gap-1 hover:text-safety-orange transition-colors"
+                  className="text-white font-semibold flex items-center gap-1 hover:text-safety-orange transition-colors whitespace-nowrap"
                 >
                   <span>Experience The Fit</span>
                   <ArrowRight className="w-3.5 h-3.5" />

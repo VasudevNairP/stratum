@@ -33,11 +33,11 @@ export default function EmailAcquisition() {
         </div>
 
         <div className="space-y-2.5 sm:space-y-3">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white uppercase font-sans">
-            Receive Sustainable Drop Coordinates 15 Minutes Before Public Release.
+          <h2 className="text-xl sm:text-3xl lg:text-5xl font-bold tracking-tight text-white uppercase font-sans leading-tight">
+            Priority Access To Drop 05 Coordinates.
           </h2>
           <p className="text-stone-400 text-xs sm:text-base max-w-xl mx-auto font-sans leading-relaxed">
-            Zero marketing hyperbole. Only cryptographic release timestamps, zero-waste batch allocations, and 15-minute priority inventory reservation keys.
+            Zero marketing hyperbole. Receive zero-waste batch allocations and 15-minute priority inventory reservation keys before public release.
           </p>
         </div>
 

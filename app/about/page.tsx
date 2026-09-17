@@ -27,7 +27,7 @@ export default function AboutPage() {
                 </span>
               </div>
 
-              <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-basalt uppercase font-sans leading-[1.08]">
+              <h1 className="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-basalt uppercase font-sans leading-tight">
                 Architectural Precision. Closed-Loop Motion.
               </h1>
 
@@ -52,7 +52,7 @@ export default function AboutPage() {
                   className="object-cover"
                   sizes="(max-width: 640px) 94vw, (max-width: 1024px) 100vw, 50vw"
                 />
-                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-hairline text-xs font-mono-spec text-basalt">
+                <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full border border-hairline text-[10px] sm:text-xs font-mono-spec text-basalt max-w-[calc(100%-1.5rem)] truncate shadow-xs">
                   TESTED OVER 15,000 DAILY COMMUTER STEPS
                 </div>
               </div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
                   <span>THE CRAFT STANDARD</span>
                 </div>
 
-                <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
+                <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-basalt uppercase font-sans leading-tight">
                   Engineered in Japan. Formulated in Switzerland.
                 </h2>
 
@@ -85,7 +85,7 @@ export default function AboutPage() {
               <span className="text-xs font-mono-spec font-bold uppercase tracking-wider text-safety-orange block mb-2">
                 FOUR PILLARS OF DESIGN
               </span>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
+              <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-basalt uppercase font-sans leading-tight">
                 What Makes STRATUM Different.
               </h2>
             </div>

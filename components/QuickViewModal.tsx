@@ -52,11 +52,11 @@ export default function QuickViewModal() {
 
         {/* Media Preview Column */}
         <div className="w-full md:w-1/2 bg-[#FAF9F8] p-5 sm:p-8 flex flex-col justify-between border-b md:border-b-0 md:border-r border-hairline">
-          <div className="flex items-center justify-between mb-4">
-            <span className="font-mono-spec text-xs bg-white px-2.5 py-1 rounded-md border border-hairline font-bold text-basalt">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+            <span className="font-mono-spec text-xs bg-white px-2.5 py-1 rounded-md border border-hairline font-bold text-basalt whitespace-nowrap">
               {quickViewProduct.specs.sku}
             </span>
-            <span className="font-mono-spec text-xs text-stone-500 uppercase">
+            <span className="font-mono-spec text-xs text-stone-500 uppercase whitespace-nowrap">
               {quickViewProduct.edition}
             </span>
           </div>
@@ -103,7 +103,7 @@ export default function QuickViewModal() {
               <span className="text-[11px] font-mono-spec text-safety-orange uppercase tracking-wider font-bold">
                 {quickViewProduct.category.toUpperCase()} · RECYCLED FIT
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-basalt tracking-tight mt-0.5">
+              <h3 className="text-xl sm:text-3xl font-bold text-basalt tracking-tight mt-0.5 leading-tight">
                 {quickViewProduct.name}
               </h3>
               <p className="text-sm text-graphite font-sans mt-1">
@@ -111,11 +111,11 @@ export default function QuickViewModal() {
               </p>
             </div>
 
-            <div className="flex items-baseline justify-between py-2 border-y border-hairline">
+            <div className="flex flex-wrap items-baseline justify-between gap-2 py-2 border-y border-hairline">
               <span className="text-2xl font-bold font-mono-spec text-basalt">
                 {formatPrice(quickViewProduct.price)}
               </span>
-              <span className="text-xs font-mono-spec text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+              <span className="text-xs font-mono-spec text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 whitespace-nowrap">
                 IN STOCK · SAME-DAY DISPATCH
               </span>
             </div>

@@ -32,14 +32,14 @@ export default function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Top Floating Badge */}
-        <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
           <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full border border-hairline bg-white/90 shadow-xs backdrop-blur-sm">
-            <span className="w-2 h-2 rounded-full bg-safety-orange animate-pulse" />
-            <span className="text-[11px] sm:text-xs font-mono-spec font-semibold tracking-wider uppercase text-basalt">
+            <span className="w-2 h-2 rounded-full bg-safety-orange animate-pulse shrink-0" />
+            <span className="text-[11px] sm:text-xs font-mono-spec font-semibold tracking-wider uppercase text-basalt whitespace-nowrap">
               EDITION 04 · LIMITED RESTOCK
             </span>
           </div>
-          <span className="text-[10px] sm:text-xs font-mono-spec text-emerald-700 font-semibold bg-emerald-50 px-2 sm:px-2.5 py-0.5 rounded-full border border-emerald-200">
+          <span className="text-[10px] sm:text-xs font-mono-spec text-emerald-700 font-semibold bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 whitespace-nowrap">
             ✓ 94% RECYCLED
           </span>
         </div>
@@ -52,7 +52,7 @@ export default function HeroSection() {
               <span className="font-mono-spec text-[11px] sm:text-xs uppercase tracking-widest text-safety-orange font-bold">
                 THE ALL-DAY PERFORMANCE SNEAKER
               </span>
-              <h1 className="text-3xl sm:text-5xl lg:text-[58px] font-bold tracking-tight text-basalt leading-[1.08] sm:leading-[1.05] uppercase font-sans">
+              <h1 className="text-[26px] xs:text-3xl sm:text-5xl lg:text-[58px] font-bold tracking-tight text-basalt leading-[1.12] sm:leading-[1.05] uppercase font-sans">
                 Feels Like Nothing Else. Built For All-Day Motion.
               </h1>
             </div>
@@ -135,17 +135,17 @@ export default function HeroSection() {
           <div className="lg:col-span-6">
             <div className="relative w-full bg-white rounded-2xl sm:rounded-3xl border border-hairline p-4 sm:p-8 shadow-xl group">
               {/* Card Meta Header */}
-              <div className="flex items-center justify-between border-b border-hairline pb-4 mb-4">
-                <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline pb-3 sm:pb-4 mb-4">
+                <div className="flex flex-wrap items-center gap-2">
                   <span className="font-mono-spec text-xs font-bold text-basalt">
                     STRATA-01 · SIGNATURE RUNNER
                   </span>
-                  <span className="font-mono-spec text-[10px] px-2 py-0.5 rounded bg-safety-orange/10 text-safety-orange font-bold border border-safety-orange/20">
+                  <span className="font-mono-spec text-[10px] px-2 py-0.5 rounded bg-safety-orange/10 text-safety-orange font-bold border border-safety-orange/20 whitespace-nowrap">
                     SELLING FAST
                   </span>
                 </div>
-                <span className="font-mono-spec text-xs text-stone-500 flex items-center gap-1">
-                  HOVER PINS TO INSPECT
+                <span className="font-mono-spec text-[11px] sm:text-xs text-stone-500 flex items-center gap-1 whitespace-nowrap">
+                  <span className="hidden sm:inline">HOVER</span><span className="sm:hidden">TAP</span> PINS TO INSPECT
                 </span>
               </div>
 

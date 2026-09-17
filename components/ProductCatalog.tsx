@@ -39,7 +39,7 @@ export default function ProductCatalog() {
                 THE 2026 LINEUP · ENGINEERED IN JAPAN
               </span>
             </div>
-            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
+            <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-basalt uppercase font-sans leading-tight">
               Built For Every Pace & Stride.
             </h2>
           </div>
@@ -97,12 +97,12 @@ export default function ProductCatalog() {
                   />
 
                   {/* Top badges */}
-                  <div className="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none">
-                    <span className="font-mono-spec text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-white/95 text-basalt border border-hairline shadow-xs">
+                  <div className="absolute top-3 left-3 right-3 flex flex-wrap items-center justify-between gap-1.5 pointer-events-none">
+                    <span className="font-mono-spec text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-white/95 text-basalt border border-hairline shadow-xs whitespace-nowrap">
                       {prod.specs.sku}
                     </span>
                     {prod.badge && (
-                      <span className="font-mono-spec text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-basalt text-white shadow-xs">
+                      <span className="font-mono-spec text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-basalt text-white shadow-xs whitespace-nowrap">
                         {prod.badge}
                       </span>
                     )}

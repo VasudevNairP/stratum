@@ -16,7 +16,7 @@ export default function MaterialLedger() {
                 SUSTAINABLE INNOVATION · CIRCULAR CRAFT
               </span>
             </div>
-            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
+            <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-basalt uppercase font-sans leading-tight">
               Light On Your Feet. Easy On The Planet.
             </h2>
           </div>
