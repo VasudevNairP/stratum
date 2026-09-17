@@ -44,11 +44,13 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               <div className="lg:col-span-6 relative aspect-4/3 sm:aspect-16/10 rounded-2xl overflow-hidden border border-hairline shadow-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=85"
+                  src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1000&q=80"
                   alt="STRATUM Footwear in natural city motion"
                   fill
+                  loading="lazy"
+                  decoding="async"
                   className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 94vw, (max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-hairline text-xs font-mono-spec text-basalt">
                   TESTED OVER 15,000 DAILY COMMUTER STEPS

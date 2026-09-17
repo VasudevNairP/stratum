@@ -20,7 +20,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full pt-6 sm:pt-10 pb-16 lg:pb-24 overflow-hidden border-b border-hairline">
+    <section className="relative w-full pt-4 sm:pt-10 pb-12 lg:pb-20 overflow-hidden border-b border-hairline">
       {/* Background Architectural Grid Accent */}
       <div
         className="absolute inset-0 opacity-[0.025] pointer-events-none"
@@ -32,57 +32,57 @@ export default function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Top Floating Badge */}
-        <div className="flex items-center gap-3 mb-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-hairline bg-white/90 shadow-xs backdrop-blur-sm">
+        <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full border border-hairline bg-white/90 shadow-xs backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-safety-orange animate-pulse" />
-            <span className="text-xs font-mono-spec font-semibold tracking-wider uppercase text-basalt">
+            <span className="text-[11px] sm:text-xs font-mono-spec font-semibold tracking-wider uppercase text-basalt">
               EDITION 04 · LIMITED RESTOCK
             </span>
           </div>
-          <span className="hidden sm:inline-block text-xs font-mono-spec text-emerald-700 font-semibold bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
-            ✓ 94% RECYCLED MATERIALS
+          <span className="text-[10px] sm:text-xs font-mono-spec text-emerald-700 font-semibold bg-emerald-50 px-2 sm:px-2.5 py-0.5 rounded-full border border-emerald-200">
+            ✓ 94% RECYCLED
           </span>
         </div>
 
         {/* Hero Split Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Editorial Headline & Actions */}
-          <div className="lg:col-span-6 space-y-6">
-            <div className="space-y-3">
-              <span className="font-mono-spec text-xs uppercase tracking-widest text-safety-orange font-bold">
+          <div className="lg:col-span-6 space-y-5 sm:space-y-6">
+            <div className="space-y-2.5 sm:space-y-3">
+              <span className="font-mono-spec text-[11px] sm:text-xs uppercase tracking-widest text-safety-orange font-bold">
                 THE ALL-DAY PERFORMANCE SNEAKER
               </span>
-              <h1 className="text-4xl sm:text-6xl lg:text-[62px] font-bold tracking-tight text-basalt leading-[1.05] uppercase font-sans">
+              <h1 className="text-3xl sm:text-5xl lg:text-[58px] font-bold tracking-tight text-basalt leading-[1.08] sm:leading-[1.05] uppercase font-sans">
                 Feels Like Nothing Else. Built For All-Day Motion.
               </h1>
             </div>
 
-            <p className="text-base sm:text-lg text-graphite leading-relaxed max-w-xl font-sans">
+            <p className="text-sm sm:text-base lg:text-lg text-graphite leading-relaxed max-w-xl font-sans">
               Featherlight, cloud-cushioned, and spun from ocean plastics. The daily runner that keeps your feet energized through 15,000 steps of hard pavement.
             </p>
 
             {/* Benefit Highlights Micro-Grid */}
-            <div className="grid grid-cols-3 gap-3 py-3 border-y border-hairline max-w-lg">
+            <div className="grid grid-cols-3 gap-2 sm:gap-3 py-3 border-y border-hairline max-w-lg">
               <div>
-                <span className="block text-[11px] font-mono-spec text-stone-400 uppercase">Weight</span>
-                <span className="text-sm sm:text-base font-mono-spec font-bold text-basalt">215g Light</span>
+                <span className="block text-[10px] sm:text-[11px] font-mono-spec text-stone-400 uppercase">Weight</span>
+                <span className="text-xs sm:text-base font-mono-spec font-bold text-basalt">215g Light</span>
               </div>
               <div>
-                <span className="block text-[11px] font-mono-spec text-stone-400 uppercase">Cushion</span>
-                <span className="text-sm sm:text-base font-mono-spec font-bold text-safety-orange">Cloud Bio-Foam</span>
+                <span className="block text-[10px] sm:text-[11px] font-mono-spec text-stone-400 uppercase">Cushion</span>
+                <span className="text-xs sm:text-base font-mono-spec font-bold text-safety-orange">Cloud Bio-Foam</span>
               </div>
               <div>
-                <span className="block text-[11px] font-mono-spec text-stone-400 uppercase">Comfort</span>
-                <span className="text-sm sm:text-base font-mono-spec font-bold text-basalt">Zero Break-In</span>
+                <span className="block text-[10px] sm:text-[11px] font-mono-spec text-stone-400 uppercase">Comfort</span>
+                <span className="text-xs sm:text-base font-mono-spec font-bold text-basalt">Zero Break-In</span>
               </div>
             </div>
 
-            {/* Dual CTAs & Inline Size Selection */}
+            {/* Dual CTAs & Responsive Size Selection */}
             <div className="space-y-4 pt-1">
-              <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+              <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-2.5 sm:gap-4">
                 <button
                   onClick={handleQuickHeroAdd}
-                  className="px-8 py-4 rounded-full bg-basalt hover:bg-stone-800 text-white font-mono-spec text-xs sm:text-sm font-semibold uppercase tracking-wider flex items-center justify-center text-center gap-2.5 transition-all shadow-md active:scale-98 group"
+                  className="w-full xs:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-basalt hover:bg-stone-800 text-white font-mono-spec text-xs sm:text-sm font-semibold uppercase tracking-wider flex items-center justify-center text-center gap-2 transition-all shadow-md active:scale-98 group"
                 >
                   {addedAnimation ? (
                     <>
@@ -99,7 +99,7 @@ export default function HeroSection() {
 
                 <button
                   onClick={() => setQuickViewProduct(heroProduct)}
-                  className="px-6 py-4 rounded-full border border-hairline bg-white hover:bg-stone-50 text-basalt font-mono-spec text-xs sm:text-sm font-medium uppercase tracking-wider transition-all flex items-center justify-center text-center gap-2 shadow-xs"
+                  className="w-full xs:w-auto px-5 sm:px-6 py-3.5 sm:py-4 rounded-full border border-hairline bg-white hover:bg-stone-50 text-basalt font-mono-spec text-xs sm:text-sm font-medium uppercase tracking-wider transition-all flex items-center justify-center text-center gap-2 shadow-xs"
                 >
                   <Layers className="w-4 h-4 text-graphite" />
                   <span>Inspect Materials</span>
@@ -107,16 +107,19 @@ export default function HeroSection() {
               </div>
 
               {/* Inline size selector helper */}
-              <div className="flex items-center gap-2 pt-1 text-xs font-mono-spec text-graphite">
-                <span>Select Size:</span>
-                <div className="flex gap-1">
+              <div className="space-y-2 pt-1 text-xs font-mono-spec text-graphite">
+                <div className="flex items-center justify-between">
+                  <span>Select Size (US Men):</span>
+                  <span className="text-stone-400 text-[11px]">• Free Shipping & Returns</span>
+                </div>
+                <div className="flex flex-wrap gap-1.5">
                   {[8.5, 9.0, 9.5, 10.0, 10.5, 11.0].map((sz) => (
                     <button
                       key={sz}
                       onClick={() => setSelectedSize(sz)}
-                      className={`px-2 py-0.5 rounded text-[11px] border transition-all flex items-center justify-center text-center ${
+                      className={`px-3 py-1.5 rounded-lg text-xs border transition-all flex items-center justify-center text-center ${
                         selectedSize === sz
-                          ? "bg-basalt text-white border-basalt font-bold"
+                          ? "bg-basalt text-white border-basalt font-bold shadow-2xs"
                           : "bg-white border-hairline text-stone-600 hover:border-stone-400"
                       }`}
                     >
@@ -124,7 +127,6 @@ export default function HeroSection() {
                     </button>
                   ))}
                 </div>
-                <span className="text-stone-400 hidden sm:inline">• Free Shipping & Returns</span>
               </div>
             </div>
           </div>
@@ -160,7 +162,7 @@ export default function HeroSection() {
                     fill
                     priority
                     className="object-cover transition-transform duration-700 group-hover:scale-103"
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="(max-width: 640px) 94vw, (max-width: 1024px) 50vw, 600px"
                   />
                   {/* Subtle vignette */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
@@ -176,7 +178,7 @@ export default function HeroSection() {
                   return (
                     <div
                       key={spot.id}
-                      className="absolute z-30 -translate-x-1/2 -translate-y-1/2 cursor-pointer"
+                      className="absolute z-30 -translate-x-1/2 -translate-y-1/2 cursor-pointer touch-manipulation"
                       style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
                       onMouseEnter={() => setActiveHotspot(spot.id)}
                       onMouseLeave={() => setActiveHotspot(null)}
@@ -204,16 +206,16 @@ export default function HeroSection() {
                         />
                       </button>
 
-                      {/* Tooltip Overlay - Foregound & Clamped */}
+                      {/* Tooltip Overlay - Foreground & Clamped for Mobile */}
                       {isActive && (
                         <div
-                          className="absolute z-50 w-56 sm:w-64 bg-basalt text-white p-3.5 rounded-xl shadow-2xl border border-stone-700 backdrop-blur-md animate-in fade-in zoom-in-95 duration-150 pointer-events-auto select-none"
+                          className="absolute z-50 w-52 xs:w-56 sm:w-64 max-w-[calc(100vw-3rem)] bg-basalt text-white p-3 sm:p-3.5 rounded-xl shadow-2xl border border-stone-700 backdrop-blur-md animate-in fade-in zoom-in-95 duration-150 pointer-events-auto select-none"
                           style={{
-                            left: isLeft ? "-8px" : isRight ? "auto" : "50%",
-                            right: isRight ? "-8px" : "auto",
+                            left: isLeft ? "0px" : isRight ? "auto" : "50%",
+                            right: isRight ? "0px" : "auto",
                             bottom: isBottom ? "calc(100% + 10px)" : "auto",
                             top: isBottom ? "auto" : "calc(100% + 10px)",
-                            transform: !isLeft && !isRight ? "translateX(-50%)" : "none",
+                            transform: isLeft || isRight ? "none" : "translateX(-50%)",
                           }}
                         >
                           <div className="flex items-center justify-between mb-1.5 gap-2">

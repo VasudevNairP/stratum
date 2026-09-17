@@ -57,8 +57,8 @@ export const PRODUCTS: Product[] = [
     badge: "BESTSELLER",
     description: "Our signature everyday silhouette. Spun from ocean-bound plastics and cushioned with cloud-soft sugarcane bio-foam. Featherlight, ultra-breathable, and so comfortable you'll forget you're wearing shoes.",
     labNote: "Zero break-in period. 94% recycled content. Looks razor-sharp from early morning commutes to late-night city walks.",
-    primaryImage: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=85",
-    hoverImage: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=85",
+    primaryImage: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1000&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1000&q=80",
     specs: {
       weight: "215g Barely-There Feel",
       drop: "4.0mm Natural Low Drop",
@@ -79,10 +79,10 @@ export const PRODUCTS: Product[] = [
         hex: "#EBEBE6",
         code: "CLR-01",
         images: {
-          lateral: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=85",
-          topDown: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1200&q=85",
-          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1200&q=85",
-          onFoot: "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=1200&q=85",
+          lateral: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1000&q=80",
+          topDown: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1000&q=80",
+          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1000&q=80",
+          onFoot: "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=1000&q=80",
         }
       },
       {
@@ -91,10 +91,10 @@ export const PRODUCTS: Product[] = [
         hex: "#1B1B1A",
         code: "CLR-02",
         images: {
-          lateral: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1200&q=85",
-          topDown: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=85",
-          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1200&q=85",
-          onFoot: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=85",
+          lateral: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1000&q=80",
+          topDown: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1000&q=80",
+          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1000&q=80",
+          onFoot: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80",
         }
       },
       {
@@ -103,10 +103,10 @@ export const PRODUCTS: Product[] = [
         hex: "#4E5643",
         code: "CLR-03",
         images: {
-          lateral: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=1200&q=85",
-          topDown: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85",
-          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1200&q=85",
-          onFoot: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1200&q=85",
+          lateral: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=1000&q=80",
+          topDown: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1000&q=80",
+          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1000&q=80",
+          onFoot: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1000&q=80",
         }
       },
       {
@@ -115,10 +115,10 @@ export const PRODUCTS: Product[] = [
         hex: "#24405E",
         code: "CLR-04",
         images: {
-          lateral: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=1200&q=85",
-          topDown: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1200&q=85",
-          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1200&q=85",
-          onFoot: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=85",
+          lateral: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=1000&q=80",
+          topDown: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1000&q=80",
+          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1000&q=80",
+          onFoot: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1000&q=80",
         }
       }
     ],
@@ -149,8 +149,8 @@ export const PRODUCTS: Product[] = [
     badge: "ALL-WEATHER",
     description: "Rugged enough for alpine ridges, sleek enough for downtown. Crafted with water-repellent recycled ripstop and sticky natural rubber lugs that refuse to slip.",
     labNote: "400+ miles on scree with zero wear. Water-resistant eco-barrier keeps feet dry through sudden downpours.",
-    primaryImage: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85",
-    hoverImage: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1200&q=85",
+    primaryImage: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1000&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1000&q=80",
     specs: {
       weight: "248g Rugged Light",
       drop: "5.0mm Natural Stance",
@@ -171,10 +171,10 @@ export const PRODUCTS: Product[] = [
         hex: "#3D3835",
         code: "CLR-01",
         images: {
-          lateral: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85",
-          topDown: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=85",
-          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1200&q=85",
-          onFoot: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1200&q=85",
+          lateral: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1000&q=80",
+          topDown: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1000&q=80",
+          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1000&q=80",
+          onFoot: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1000&q=80",
         }
       }
     ],
@@ -201,8 +201,8 @@ export const PRODUCTS: Product[] = [
     badge: "ULTRALIGHT 198G",
     description: "Stripped of all excess bulk. Single-layer un-dyed mono mesh breathes like a breeze, resting on a springy sugarcane cushion that takes the sting out of concrete.",
     labNote: "Air permeability index: 480 L/m²/s. Waterless dye method saves 85% freshwater.",
-    primaryImage: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=1200&q=85",
-    hoverImage: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=85",
+    primaryImage: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=1000&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80",
     specs: {
       weight: "198g Ultra Featherweight",
       drop: "3.5mm Low Profile",
@@ -223,10 +223,10 @@ export const PRODUCTS: Product[] = [
         hex: "#EFEFEA",
         code: "CLR-01",
         images: {
-          lateral: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=1200&q=85",
-          topDown: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1200&q=85",
-          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1200&q=85",
-          onFoot: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=85",
+          lateral: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=1000&q=80",
+          topDown: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1000&q=80",
+          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1000&q=80",
+          onFoot: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80",
         }
       }
     ],
@@ -253,8 +253,8 @@ export const PRODUCTS: Product[] = [
     badge: "ALGAE FOAM",
     description: "Molded from Bloom® harvested algae foam with a deep ergonomic footbed that cradles your heel and unloads foot tension. The easiest slip-on you'll ever own.",
     labNote: "Every pair cleans and restores 80 liters of natural freshwater. 100% circular recyclable.",
-    primaryImage: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1200&q=85",
-    hoverImage: "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=1200&q=85",
+    primaryImage: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1000&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=1000&q=80",
     specs: {
       weight: "160g Feather Foam",
       drop: "0.0mm Natural Cradle",
@@ -275,10 +275,10 @@ export const PRODUCTS: Product[] = [
         hex: "#222220",
         code: "CLR-01",
         images: {
-          lateral: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1200&q=85",
-          topDown: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=85",
-          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1200&q=85",
-          onFoot: "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=1200&q=85",
+          lateral: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1000&q=80",
+          topDown: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1000&q=80",
+          heel: "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1000&q=80",
+          onFoot: "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=1000&q=80",
         }
       }
     ],

@@ -28,49 +28,51 @@ export default function ProductCatalog() {
   };
 
   return (
-    <section id="category-catalog" className="w-full py-16 sm:py-24 border-b border-hairline bg-[#FAF9F8]">
+    <section id="category-catalog" className="w-full py-12 sm:py-20 lg:py-24 border-b border-hairline bg-[#FAF9F8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header with Segmented Filter Switchers */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-6 border-b border-hairline gap-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 pb-6 border-b border-hairline gap-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span className="w-2 h-2 bg-safety-orange rounded-full" />
-              <span className="font-mono-spec text-xs uppercase tracking-widest text-safety-orange font-bold">
+              <span className="font-mono-spec text-[11px] sm:text-xs uppercase tracking-widest text-safety-orange font-bold">
                 THE 2026 LINEUP · ENGINEERED IN JAPAN
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
               Built For Every Pace & Stride.
             </h2>
           </div>
 
-          {/* Segmented Filter Switcher */}
-          <div className="flex items-center p-1 bg-white rounded-full border border-hairline shadow-xs">
-            {(
-              [
-                { id: "all", label: "All Silhouettes" },
-                { id: "road", label: "Daily Walk & City" },
-                { id: "trail", label: "Trail & Outdoor" },
-                { id: "recovery", label: "Recovery Slides" },
-              ] as const
-            ).map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveFilter(tab.id)}
-                className={`px-4 py-2 text-xs font-mono-spec uppercase rounded-full transition-all flex items-center justify-center text-center ${
-                  activeFilter === tab.id
-                    ? "bg-basalt text-white shadow-xs font-bold"
-                    : "text-stone-600 hover:text-basalt"
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
+          {/* Touch-Friendly Horizontally Scrollable Segmented Filter Switcher */}
+          <div className="w-full md:w-auto overflow-x-auto no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0">
+            <div className="inline-flex items-center p-1 bg-white rounded-full border border-hairline shadow-xs min-w-max">
+              {(
+                [
+                  { id: "all", label: "All Silhouettes" },
+                  { id: "road", label: "Daily Walk & City" },
+                  { id: "trail", label: "Trail & Outdoor" },
+                  { id: "recovery", label: "Recovery Slides" },
+                ] as const
+              ).map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveFilter(tab.id)}
+                  className={`px-3.5 sm:px-4 py-1.5 sm:py-2 text-xs font-mono-spec uppercase rounded-full transition-all flex items-center justify-center text-center whitespace-nowrap shrink-0 ${
+                    activeFilter === tab.id
+                      ? "bg-basalt text-white shadow-xs font-bold"
+                      : "text-stone-600 hover:text-basalt"
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {filtered.map((prod) => {
             const isHovered = hoveredProduct === prod.id;
             const isAdded = addedProductId === prod.id;
@@ -88,6 +90,8 @@ export default function ProductCatalog() {
                     src={isHovered ? prod.hoverImage : prod.primaryImage}
                     alt={prod.name}
                     fill
+                    loading="lazy"
+                    decoding="async"
                     className="object-cover transition-transform duration-500 group-hover:scale-104"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />

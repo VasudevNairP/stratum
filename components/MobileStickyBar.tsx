@@ -37,7 +37,7 @@ export default function MobileStickyBar() {
   };
 
   return (
-    <div className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-hairline p-3 shadow-2xl animate-in slide-in-from-bottom duration-300">
+    <div className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-hairline px-3.5 pt-2.5 pb-[max(0.75rem,env(safe-area-inset-bottom,0.75rem))] shadow-2xl animate-in slide-in-from-bottom duration-300">
       <div className="flex items-center justify-between gap-3">
         {/* Product thumbnail & basic info */}
         <div className="flex items-center gap-2.5 min-w-0">

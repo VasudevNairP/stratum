@@ -15,7 +15,7 @@ export default function EmailAcquisition() {
   };
 
   return (
-    <section className="w-full bg-basalt text-white py-16 sm:py-24 border-b border-hairline-dark relative overflow-hidden">
+    <section className="w-full bg-basalt text-white py-12 sm:py-20 lg:py-24 border-b border-hairline-dark relative overflow-hidden">
       {/* Precision grid backdrop */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -25,18 +25,18 @@ export default function EmailAcquisition() {
         }}
       />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center space-y-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center space-y-6 sm:space-y-8">
         {/* Terminal Header Tag */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1C1C1A] border border-stone-800 text-stone-400 font-mono-spec text-xs">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1C1C1A] border border-stone-800 text-stone-400 font-mono-spec text-[11px] sm:text-xs">
           <Terminal className="w-3.5 h-3.5 text-safety-orange" />
           <span>EXCLUSIVE ACCESS · UPCOMING DROP 05</span>
         </div>
 
-        <div className="space-y-3">
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-white uppercase font-sans">
+        <div className="space-y-2.5 sm:space-y-3">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white uppercase font-sans">
             Receive Sustainable Drop Coordinates 15 Minutes Before Public Release.
           </h2>
-          <p className="text-stone-400 text-sm sm:text-base max-w-xl mx-auto font-sans">
+          <p className="text-stone-400 text-xs sm:text-base max-w-xl mx-auto font-sans leading-relaxed">
             Zero marketing hyperbole. Only cryptographic release timestamps, zero-waste batch allocations, and 15-minute priority inventory reservation keys.
           </p>
         </div>
@@ -62,8 +62,8 @@ export default function EmailAcquisition() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="ENTER EMAIL FOR SUSTAINABLE DROP ACCESS"
-                className="w-full sm:flex-1 px-4 py-3 bg-transparent text-white placeholder:text-stone-600 font-mono-spec text-xs focus:outline-hidden"
+                placeholder="architect@stratum.design"
+                className="w-full sm:flex-1 px-4 py-3 bg-transparent text-white placeholder:text-stone-500 font-mono-spec text-xs focus:outline-hidden"
               />
               <button
                 type="submit"

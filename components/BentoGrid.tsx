@@ -30,32 +30,32 @@ export default function BentoGrid() {
   const activeLayer = EXPLODED_STACK_LAYERS[activeLayerIndex];
 
   return (
-    <section id="bento-engineering" className="w-full py-16 sm:py-24 border-b border-hairline bg-bone">
+    <section id="bento-engineering" className="w-full py-12 sm:py-20 lg:py-24 border-b border-hairline bg-bone">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-6 border-b border-hairline gap-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 pb-6 border-b border-hairline gap-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span className="w-2 h-2 bg-safety-orange rounded-full" />
-              <span className="font-mono-spec text-xs uppercase tracking-widest text-safety-orange font-bold">
+              <span className="font-mono-spec text-[11px] sm:text-xs uppercase tracking-widest text-safety-orange font-bold">
                 ENGINEERED ARCHITECTURE · EDITION 04
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
               Sustainable Precision In Motion.
             </h2>
           </div>
-          <p className="text-sm text-graphite font-mono-spec max-w-md">
+          <p className="text-xs sm:text-sm text-graphite font-mono-spec max-w-md">
             Biomechanical test benches at Kyoto & Zurich laboratories. Real-time circular telemetry, exploded sustainable stack geometry, and interactive sizing.
           </p>
         </div>
 
         {/* Glean-Style Bento Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
           {/* ========================================================================= */}
           {/* CARD A: Large Product Focus with Interactive Size Grid (Span 7 cols)     */}
           {/* ========================================================================= */}
-          <div className="lg:col-span-7 bg-white rounded-2xl sm:rounded-3xl border border-hairline p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-stone-400 transition-colors">
+          <div className="lg:col-span-7 bg-white rounded-2xl sm:rounded-3xl border border-hairline p-5 sm:p-8 flex flex-col justify-between shadow-xs hover:border-stone-400 transition-colors">
             <div>
               {/* Card Meta Bar */}
               <div className="flex items-center justify-between mb-4">
@@ -98,8 +98,10 @@ export default function BentoGrid() {
                   src={selectedColorway.images[activeAngle] || product.primaryImage}
                   alt={product.name}
                   fill
+                  loading="lazy"
+                  decoding="async"
                   className="object-cover transition-transform duration-500 group-hover:scale-102"
-                  sizes="(max-width: 1024px) 100vw, 60vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 60vw"
                 />
                 <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-hairline text-[11px] font-mono-spec text-basalt">
                   RECYCLED: 94.2% · DROP: 4.0mm
@@ -247,11 +249,13 @@ export default function BentoGrid() {
                 {/* Dynamic Macro Material Visual */}
                 <div className="relative h-24 w-full rounded-lg overflow-hidden border border-hairline group">
                   <Image
-                    src="https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=1200&q=85"
+                    src="https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=1000&q=80"
                     alt="Sustainable Shoe Texture Macro Detail"
                     fill
+                    loading="lazy"
+                    decoding="async"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    sizes="(max-width: 640px) 94vw, (max-width: 1024px) 100vw, 40vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-white font-mono-spec text-[10px]">
@@ -332,11 +336,13 @@ export default function BentoGrid() {
             <div className="relative rounded-2xl sm:rounded-3xl border border-hairline-dark overflow-hidden min-h-[260px] flex flex-col justify-between p-6 shadow-md group">
               {/* Full-bleed photography background */}
               <Image
-                src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=85"
+                src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1000&q=80"
                 alt="Shoe in natural motion on city street"
                 fill
+                loading="lazy"
+                decoding="async"
                 className="object-cover group-hover:scale-104 transition-transform duration-700"
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                sizes="(max-width: 640px) 94vw, (max-width: 1024px) 100vw, 40vw"
               />
 
               {/* Contrast scrim overlay */}

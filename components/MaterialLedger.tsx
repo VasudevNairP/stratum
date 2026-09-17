@@ -5,30 +5,30 @@ import { Leaf, RefreshCw, BarChart2, ShieldCheck, ArrowUpRight } from "lucide-re
 
 export default function MaterialLedger() {
   return (
-    <section id="sustainability-ledger" className="w-full py-16 sm:py-24 border-b border-hairline bg-bone">
+    <section id="sustainability-ledger" className="w-full py-12 sm:py-20 lg:py-24 border-b border-hairline bg-bone">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-hairline gap-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 pb-6 border-b border-hairline gap-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span className="w-2 h-2 bg-safety-orange rounded-full" />
-              <span className="font-mono-spec text-xs uppercase tracking-widest text-safety-orange font-bold">
+              <span className="font-mono-spec text-[11px] sm:text-xs uppercase tracking-widest text-safety-orange font-bold">
                 SUSTAINABLE INNOVATION · CIRCULAR CRAFT
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
+            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-basalt uppercase font-sans">
               Light On Your Feet. Easy On The Planet.
             </h2>
           </div>
-          <p className="text-sm text-graphite font-mono-spec max-w-md">
+          <p className="text-xs sm:text-sm text-graphite font-mono-spec max-w-md">
             We engineered out the petroleum, the blisters, and the waste. What is left is pure, high-rebound everyday comfort.
           </p>
         </div>
 
         {/* 3-Column Compelling Visual Story Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
           {/* Column 1: Ocean Plastic */}
-          <div className="bg-white rounded-2xl sm:rounded-3xl border border-hairline p-8 flex flex-col justify-between shadow-xs hover:border-stone-400 transition-colors">
+          <div className="bg-white rounded-2xl sm:rounded-3xl border border-hairline p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-stone-400 transition-colors">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <span className="font-mono-spec text-xs font-bold text-basalt uppercase">
@@ -74,7 +74,7 @@ export default function MaterialLedger() {
           </div>
 
           {/* Column 2: Sugarcane Bio-Foam */}
-          <div className="bg-white rounded-2xl sm:rounded-3xl border border-hairline p-8 flex flex-col justify-between shadow-xs hover:border-stone-400 transition-colors">
+          <div className="bg-white rounded-2xl sm:rounded-3xl border border-hairline p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-stone-400 transition-colors">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <span className="font-mono-spec text-xs font-bold text-basalt uppercase">
@@ -120,7 +120,7 @@ export default function MaterialLedger() {
           </div>
 
           {/* Column 3: The 500-Mile Return Guarantee */}
-          <div className="bg-white rounded-2xl sm:rounded-3xl border border-hairline p-8 flex flex-col justify-between shadow-xs hover:border-stone-400 transition-colors">
+          <div className="bg-white rounded-2xl sm:rounded-3xl border border-hairline p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-stone-400 transition-colors">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <span className="font-mono-spec text-xs font-bold text-basalt uppercase">

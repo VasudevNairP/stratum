@@ -39,19 +39,19 @@ export default function QuickViewModal() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-basalt/60 backdrop-blur-sm animate-in fade-in duration-150">
-      <div className="relative w-full max-w-4xl bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-hairline overflow-hidden max-h-[92vh] flex flex-col md:flex-row">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-basalt/60 backdrop-blur-sm animate-in fade-in duration-150">
+      <div className="relative w-full max-w-4xl bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-hairline overflow-y-auto max-h-[92vh] flex flex-col md:flex-row">
         {/* Close Button */}
         <button
           onClick={() => setQuickViewProduct(null)}
-          className="absolute top-4 right-4 z-20 p-2 rounded-full bg-white/80 hover:bg-white text-stone-600 hover:text-basalt border border-hairline transition-colors shadow-xs"
+          className="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 z-20 p-2 rounded-full bg-white/80 hover:bg-white text-stone-600 hover:text-basalt border border-hairline transition-colors shadow-xs"
           aria-label="Close product view"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Media Preview Column */}
-        <div className="w-full md:w-1/2 bg-[#FAF9F8] p-6 sm:p-8 flex flex-col justify-between border-b md:border-b-0 md:border-r border-hairline">
+        <div className="w-full md:w-1/2 bg-[#FAF9F8] p-5 sm:p-8 flex flex-col justify-between border-b md:border-b-0 md:border-r border-hairline">
           <div className="flex items-center justify-between mb-4">
             <span className="font-mono-spec text-xs bg-white px-2.5 py-1 rounded-md border border-hairline font-bold text-basalt">
               {quickViewProduct.specs.sku}
@@ -66,6 +66,7 @@ export default function QuickViewModal() {
               src={selectedColorway.images.lateral || quickViewProduct.primaryImage}
               alt={quickViewProduct.name}
               fill
+              decoding="async"
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
