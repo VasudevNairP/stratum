@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- STRATUM Architectural Monogram & Squircle Foundation -->
+  <rect width="64" height="64" rx="15" fill="#121212"/>
+  <rect x="1" y="1" width="62" height="62" rx="14" stroke="#2A2A28" stroke-width="1.5"/>
+  
+  <!-- Architectural 'S' Form -->
+  <path d="M43 18H28L19.5 25.5L32 32L44.5 38.5L36 46H21" 
+        stroke="#FFFFFF" 
+        stroke-width="8.4" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+        
+  <!-- Safety Orange Biomechanical Telemetry Beacon -->
+  <circle cx="46" cy="18" r="3.8" fill="#FF4F00"/>
+</svg>
